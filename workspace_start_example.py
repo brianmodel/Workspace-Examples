@@ -1,4 +1,4 @@
-#Importing the aws SDK
+#Importing the AWS SDK
 import boto3
 
 #Creading workspace client object 
