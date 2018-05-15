@@ -85,3 +85,12 @@ resource "aws_cloudwatch_event_target" "workspace_stop_lambda" {
   target_id = "lambda_target"
   arn       = "${aws_lambda_function.workspace_stop.arn}"
 }
+
+resource "aws_cloudwatch_log_group" "workspace_start_group" {
+
+  name = "/aws/lambda/workspace_start"
+}
+resource "aws_cloudwatch_log_group" "workspace_stop_group" {
+
+  name = "/aws/lambda/workspace_stop"
+}
